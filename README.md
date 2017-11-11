@@ -2,6 +2,8 @@
 > Practice cloning a twitch website <br>
 > Learn how to use third party APIs <br>
 
+[Demo]( https://tony40508.github.io/twitch-practice/)
+
 ## :white_check_mark: Goals
 - [x] Twitch API
 - [x] placeholder
