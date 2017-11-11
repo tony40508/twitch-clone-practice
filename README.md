@@ -8,7 +8,7 @@
 - [x] Twitch API
 - [x] placeholder
 - [x] infinite scroll
-- [ ] vanilla js
+- [x] vanilla js
 - [ ] i18n
 - [ ] Webpack
 - [ ] Gulp
