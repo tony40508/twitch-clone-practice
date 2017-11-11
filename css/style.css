@@ -10,23 +10,43 @@ body {
   padding-top: 30px;
 }
 
+.container .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container .menu .title {
+  margin: 0;
+}
+
+.container .menu .btn .twBtn, .container .menu .btn .enBtn, .container .menu .btn .jpBtn {
+  display: inline-block;
+  padding: 10px 10px 20px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.container .menu .btn .twBtn:hover, .container .menu .btn .enBtn:hover, .container .menu .btn .jpBtn:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.01);
+}
+
 .container .row {
   width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .container .row .col {
   width: 300px;
   display: inline-block;
-  margin-bottom: 20px;
   box-sizing: border-box;
-}
-
-.container .row .col:nth-child(3n) {
-  margin-right: 0px;
+  margin: 15px 16.5px;
 }
 
 .container .row .col:hover {
@@ -35,7 +55,7 @@ body {
 }
 
 .container .row .col:hover .preview {
-  filter: brightness(1.5);
+  filter: contrast(1.25) brightness(1.5);
 }
 
 .container .row .col .preview {

@@ -1,3 +1,8 @@
+@mixin flexCenter
+  display: flex
+  justify-content: center
+  align-items: center
+
 body
     background: url('http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg') no-repeat center
     background-attachment: fixed
@@ -7,26 +12,38 @@ body
     background: rgba(0, 0, 0, 0.5)
     min-height: 100vh
     padding-top: 30px
+    
+    .menu
+        +flexCenter
+        flex-direction: column
+        margin-bottom: 0px
+        color: rgba(white, 0.6)
+        .title 
+            margin: 0
+        .btn .twBtn, .btn .enBtn, .btn .jpBtn
+            display: inline-block
+            padding: 10px 10px 20px 10px
+            cursor: pointer
+            transition: all 0.2s
+            &:hover
+                color: rgba(white, 0.9)
+                transform: scale(1.01)
     .row
         width: 1000px
         margin: 0 auto
-        // text-align: center
         display: flex
         flex-wrap: wrap
-        justify-content: space-around
+        // justify-content: space-between
         .col
             width: 300px
             display: inline-block
-            margin-bottom: 20px
             box-sizing: border-box
-            // margin-right: 20px
-            &:nth-child(3n)
-                margin-right: 0px
+            margin: 15px 16.5px  
             &:hover
                 cursor: pointer
                 box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)
                 .preview
-                    filter: brightness(1.5)
+                    filter: contrast(1.25) brightness(1.5)
             .preview
                 transition: all 0.3s
                 height: 168px
