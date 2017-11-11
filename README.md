@@ -9,7 +9,7 @@
 - [x] placeholder
 - [x] infinite scroll
 - [x] vanilla js
-- [ ] i18n
+- [x] i18n
 - [ ] Webpack
 - [ ] Gulp
 - [ ] ESLint ＆ standard
