@@ -1,3 +1,4 @@
+import "../css/style.css"
 import en from "./lang-en"
 import jp from "./lang-jp"
 import tw from "./lang-zh-tw"

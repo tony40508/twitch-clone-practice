@@ -13,11 +13,10 @@ export default {
         loaders: [
             {
                 test: /\.css$/,
-                loader: 'style!css'
-            },
-            {
-                test: /\.sass$/,
-                loader: 'style-loader!css-loader!sass-loader'
+                loader: [
+                    'style-loader', 
+                    'css-loader'
+                ]
             },
             {
                 test: /\.js$/,
