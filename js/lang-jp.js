@@ -1,7 +1,3 @@
-if (!window.I18N) {
-    window.I18N = {};
-}
-
-window.I18N["jp"] = {
+export default {
     TITLE: "ゲーム実況プレイ"
 }

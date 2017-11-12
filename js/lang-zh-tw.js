@@ -1,7 +1,3 @@
-if (!window.I18N) {
-    window.I18N = {};
-}
-
-window.I18N["zh-tw"] = {
+export default {
     TITLE: "中文直播頻道"
 }

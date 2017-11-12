@@ -8,9 +8,9 @@ html
             .menu   
                 h1.title The Streams in English
                 .btn
+                    .enBtn(class="selected" data-selectedLang="en") English
                     .twBtn(data-selectedLang="zh-tw") 中文
-                    .jpBtn(data-selectedLang="jp") 日本語
-                    .enBtn(data-selectedLang="en") English
+                    .jpBtn(data-selectedLang="jp") 日本語  
                     
             .row
                 //- .col
@@ -22,10 +22,13 @@ html
                 //-         .intro
                 //-             .channel_name 頻道
                 //-             .owner_name 實況主 
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js")
-        script(src="js/lang-en.js")
-        script(src="js/lang-zh-tw.js")
-        script(src="js/lang-jp.js")
-        script(src="js/main.js")
+
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js")
+        //- script(src="js/lang-en.js")
+        //- script(src="js/lang-zh-tw.js")
+        //- script(src="js/lang-jp.js")
+        //- script(src="js/main.js")
+        script(src="dist/bundle.js")
+
         

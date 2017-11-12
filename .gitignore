@@ -5,3 +5,5 @@
 # Map File
 *.map
 
+node_modules
+

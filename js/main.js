@@ -1,3 +1,13 @@
+import en from "./lang-en"
+import jp from "./lang-jp"
+import tw from "./lang-zh-tw"
+
+const I18N = {
+    'en': en,
+    'zh-tw': tw,
+    'jp': jp
+}
+
 let nowIndex = 0;
 let isLoading = false;
 let LANG = 'en'
@@ -9,18 +19,22 @@ document.querySelector('.jpBtn').addEventListener('click', changeLang);
 const $row = document.querySelector('.row');
 
 function changeLang(e) { 
+    document.querySelector('.enBtn').classList.remove('selected');
+    document.querySelector('.twBtn').classList.remove('selected');
+    document.querySelector('.jpBtn').classList.remove('selected');
+
     var e = event.target;
-    let getAttr = e.getAttribute("data-selectedLang");
-    console.log(getAttr)
+    e.classList.toggle('selected');
+    let getAttr = e.getAttribute('data-selectedLang');
 
     if (getAttr === 'en' || getAttr === 'zh-tw' || getAttr === 'jp') {
         nowIndex = 0;
-        document.querySelector(".title").innerHTML = window.I18N[getAttr].TITLE;
+        document.querySelector(".title").innerHTML = I18N[getAttr].TITLE;
         LANG = getAttr;
         $row.innerHTML = "";
         appendData(LANG);
     }
-};
+}
 
 function getData(lang, cb) {
     const clientId = '1uite112wxwjvd0gk7lv9n3q8qxe3q';
@@ -53,7 +67,7 @@ function getData(lang, cb) {
         }
     };
     xhr.send();
-};
+}
 
 function appendData(lang) {
     getData(lang, (err, data) => {
@@ -81,7 +95,7 @@ function appendData(lang) {
             isLoading = false;
         }
     });
-};
+}
 
 
 function getColumn(data) {
@@ -104,7 +118,7 @@ function getColumn(data) {
                 </div>
             </div>
         </div>`;
-};
+}
 
 // $(document).ready(() => {
 //     appendData();
@@ -129,11 +143,11 @@ function documentHeight() {
         html.offsetHeight,
         html.scrollHeight
     );
-};
+}
 
 function scrollTop() {
     return (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-};
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     appendData(LANG);

@@ -1,0 +1,29 @@
+{
+  "name": "twitch-practice",
+  "version": "1.0.0",
+  "description": "> Practice cloning a twitch website <br> > Learn how to use third party APIs <br>",
+  "main": "main.js",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tony40508/twitch-clone-practice.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tony40508/twitch-clone-practice/issues"
+  },
+  "homepage": "https://github.com/tony40508/twitch-clone-practice#readme"
+}
