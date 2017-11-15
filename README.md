@@ -2,7 +2,7 @@
 > Practice cloning a twitch website <br>
 > Learn how to use third party APIs <br>
 
-[Demo]( https://tony40508.github.io/twitch-practice/)
+# :round_pushpin: [Demo]( https://tony40508.github.io/twitch-practice/)
 
 ## :white_check_mark: Goals
 - [x] Twitch API
@@ -21,5 +21,5 @@
 - [ ] Gulp
 - [ ] ESLint ＆ standard
 
-## :ideograph_advantage: Reference
+## :link: Reference
 [從新手到中手：前端工程加強班](https://github.com/aszx87410/frontend-intermediate-course)
